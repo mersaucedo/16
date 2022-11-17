@@ -2,18 +2,18 @@ let ejer = +prompt("Ingrese un número");
 switch(ejer){
     case 1:
 
-        let multiplicacion =function(x,y){
-            return x*y
-        }
-        let expon =function(x,y){
-            return Math.pow(x,y)
-        }
-        let suma = (x,y) => {return x+y};
+        // let multiplicacion =function(x,y){
+        //     return x*y
+        // }
+        // let expon =function(x,y){
+        //     return Math.pow(x,y)
+        // }
+        // let suma = (x,y) => {return x+y};
         
-        var result = multiplicacion(2,3);
-        alert(result)
-        result = suma (3,4);
-        alert (result);
+        // var result = multiplicacion(2,3);
+        // alert(result)
+        // result = suma (3,4);
+        // alert (result);
         let resta = (x,y) =>{
             return x-y;
         }
@@ -24,9 +24,17 @@ switch(ejer){
 
     case 2:
 
-        let pasF = (grado) => {return Fahrenheit = grado *1.8+32;};
-        var result = pasF(22);
-        alert(result);
+        // let pasF = (grado) => {
+        // return Fahrenheit = grado *1.8 + 32;
+        // };
+        // let result2 = pasF(32);
+        // alert(result2);
+        function FahrenheitaC( Fa){
+            let Celcius = ((Fa - 32)*5)/9;
+            alert(`${Fa}°F es igual a ${Math.round(Celcius)}°C`)
+    
+         }
+         FahrenheitaC(150);
 
     break;
 
@@ -40,7 +48,7 @@ switch(ejer){
     
         }
 
-        var result = suma2(num1,num2);
+        let result = suma2(num1,num2);
         alert(`El resultado de la suma es ${result}`)
         
         
